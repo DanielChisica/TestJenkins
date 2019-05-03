@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Iniciosesion</servlet-name>
+        <servlet-class>Servlets.Iniciosesion</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CrearUsuario</servlet-name>
+        <servlet-class>Servlets.CrearUsuario</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CrearUser</servlet-name>
+        <servlet-class>Servlets.CrearUser</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>consignacion</servlet-name>
+        <servlet-class>Servlets.consignacion</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Iniciosesion</servlet-name>
+        <url-pattern>/sesion</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CrearUsuario</servlet-name>
+        <url-pattern>/CUsuario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CrearUser</servlet-name>
+        <url-pattern>/crearu</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>consignacion</servlet-name>
+        <url-pattern>/cmonto</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
